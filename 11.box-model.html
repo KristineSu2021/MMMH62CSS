@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #afa;
+            float: left;
+            padding-left: 50px;
+            padding-right: 50px;
+            border: 1px solid black;
+            margin-left: 5px;
+            margin-right: 5px;
+            outline: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Box1</div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>

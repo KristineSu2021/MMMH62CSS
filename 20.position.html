@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .container {
+            background: #ccc;
+            height: 600px;
+            padding: 30px;
+            position: relative;
+        }
+
+        .box1 {
+            background-color: #afa;
+            height: 400px;
+            padding: 30px;
+            /* position: relative; */
+        }
+
+        .box2 {
+            background-color: #faf;
+            height: 200px;
+            position: relative;
+            margin-top: 120px;
+        }
+
+        h1 {
+            margin: 0;
+            line-height: 1.3;
+            width: 100px;
+            text-align: center;
+
+            position: absolute;
+            color: blueviolet;
+            top: 0px;
+            right: -20px;
+            background-color: rgb(255, 206, 80);
+        }
+
+        .relative {
+            position: relative;
+            line-height: 5;
+            margin-bottom: 50px;
+            left: 100px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative">relative</div>
+
+    <div class="container">
+
+        <div class="box1">
+
+            <div class="box2">
+
+                <h1>Hi</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
