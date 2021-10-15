@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            margin: 10px;
+            float: left;
+            transition: .5s;
+            overflow: hidden
+        }
+        .translate:hover{
+            transform: translate(100px,100px);
+        }
+        .translateX:hover{
+            transform: translateX(150px);
+        }
+        .translateY:hover{
+            transform: translateY(150px);
+        }
+        .rotate:hover{
+            background-color: rgb(138, 70, 70);
+            transform: translate(100px,100px)rotate(180deg);
+        }
+
+        .box:hover img{
+            transform: scale(1.2);
+            background: hiddend;
+
+        }
+        .skewX:hover{
+            transform: skewX(30deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box translate">translate</div>
+    <div class="box translateX">translateX</div>
+    <div class="box translateY">translateY</div>
+    <div class="box rotate">rotate</div>
+    <div class="box"><img src="/images/3.png" alt=""></div>
+    <div class="box skewX">skewX</div>
+    
+</body>
+</html>

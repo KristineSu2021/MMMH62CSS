@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card backface</title>
+    <style>
+        .card_hover {
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .card {
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            position: relative;
+            width: 300px;
+            height: 400px;
+        }
+
+        .card img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            backface-visibility: hidden;
+        }
+
+        .back {
+            transform: rotateY(180deg);
+        }
+
+        .card_hover .card {
+            transition: all .5s;
+        }
+
+        .card_hover:hover .card {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card_hover">
+            <div class="card">
+                <img src="./images/ex1_pic1.jpg" alt="" class="front">
+                <img src="./images/ex1_pic2.jpg" alt="" class="back">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

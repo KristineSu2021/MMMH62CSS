@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .price::before{
+            content: "NT$";            
+        }
+
+        .price::after{
+            content: "元";            
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(44, 141, 141);
+            position: relative;
+        }
+
+        .box::after{
+            content: "標籤樣式";
+            display: block;
+            width: 80px;
+            height: 20px;
+            background-color: rgb(39, 39, 110);
+            position: absolute;
+            right: -30px;
+            top: -10px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="price">500</div>
+
+    <div class="box">
+    </div>
+</body>
+</html>
